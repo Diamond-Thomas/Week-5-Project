@@ -5,3 +5,6 @@ I used HTML tags and attributes  to distinguish the different walls and poems al
 ### What was the difference between what getElementById returned and what your group selection method returned?
 One differerence I saw between getElementById and group selection was that getElementById printed out all the lines as /n.
 
+### When you moved the item, did you have to manually “delete” it from the first wall? Explain what happened to the node in the DOM tree when you called the movement method.
+
+No I did not have to manually delete it from the first wall because by using appendchild the node is automatically moved from where it orginally was to the place that it appended to.
