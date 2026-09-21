@@ -15,10 +15,6 @@ movingPoem.style.backgroundColor = "blue";
 
 
 
-/*
-This code below wasn't specified in the instructions,
-but I added it so that the add button would work.
-*/
 
 document.getElementById("add-poem-to-gallery").addEventListener("click", function () {
     const title = document.getElementById("poem-title").value;
@@ -37,4 +33,8 @@ document.getElementById("add-poem-to-gallery").addEventListener("click", functio
     newPoem.append(h3, p);
 
     document.getElementById(wallId).appendChild(newPoem);
+
+    document.getElementById("poem-title").value = "";
+    document.getElementById("poem-lines").value = "";
+    document.getElementById("poem-color").value = "";
 });
